@@ -5,15 +5,7 @@
 
 [6 7 3 6] -> 36 21*/
 
-int[] myArray = new int[7];
-
-myArray[0] = 2;
-myArray[1] = 8;
-myArray[2] = 26;
-myArray[3] = 11;
-myArray[4] = 3;
-myArray[5] = 10;
-myArray[6] = 7;
+int[] myArray = { 2, 8, 26, 11, 3, 10, 7 };
 
 for (var i = 0; i < myArray.Length; i++)
 {
@@ -22,22 +14,14 @@ for (var i = 0; i < myArray.Length; i++)
 }
 Console.WriteLine();
 
-int[] myArray2 = new int[myArray.Length];
+int[] myArray2 = new int[4];
 
 for (var i = 0; i < myArray2.Length; i++)
 {
-
     myArray2[0] = myArray[0] * myArray[6];
     myArray2[1] = myArray[1] * myArray[5];
     myArray2[2] = myArray[2] * myArray[4];
     myArray2[3] = myArray[3];
 
-    if (myArray2[i] != 0)
-    {
-
-        Console.Write(" " + myArray2[i]);
-    }
-
-
-
+    Console.Write(" " + myArray2[i]);
 }
